@@ -32,8 +32,8 @@ if __name__ == '__main__':
     # get # of rows so that each confirmation can be printed with x/y so user knows how far they are
     with open(file_path, newline='') as csvfile:
         transact_reader = csv.reader(csvfile, delimiter=',', quotechar='|') 
-        for row in transact_reader:
-            th.parseRow(row)
+        for count, row in enumerate(transact_reader):
+            th.parseRow(count, row)
 
     th.printTransactions()
     #th.organize()
