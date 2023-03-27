@@ -1,10 +1,9 @@
 #### 1.0 Operation
-- The program will be operated using the CLI
-- The entry point is `py spendingallocator.py`. The available commands are listed under Section 2.0.
-- Pressing tab with no entries will list available commands.
+- Operated using the CLI
+- Entry point is `spending-allocator-cli` or `spcl`
 
 #### 2.0 CLI
-- Available commands
+- To be available commands
 	- `add --type`
 		- `--entry` - type option, adds a single entry (for cash, etc.)
 			- Prompts for each field in the entry
