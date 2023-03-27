@@ -1,8 +1,8 @@
 import click
 import csv
 import time
+import tk
 import tkinter as tk
-from tkinter import filedialog
 from transactionholder import *
 
 @click.command()

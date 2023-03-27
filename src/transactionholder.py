@@ -9,17 +9,17 @@ class TransactionHolder:
 
     # For Personal Capital style exports
     def parseRow(self, count, row):
-        click.echo(row)
+        click.echo(count, ': ', row)
         if count == 0:
             self.headers.append('Line')
             for col in row:
                 self.headers.append(col)
             self.headers.append('isChanged')
             click.echo(row)
-        else if click.confirm('Do you have any changes?', default=False):
+        elif click.confirm('Do you have any changes?', default=False):
             # TODO - put it in a do while loop?
-            while changeColValue(row) == True
-            row.append(True)
+            while changeColValue(row) == True:
+                row.append(True)
             # logic for making edits
 
         self.transactions.append(row)
